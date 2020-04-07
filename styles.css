@@ -1,0 +1,363 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+/*Nav bar*/
+/*body{
+	padding: 0;
+	margin: 0;
+}
+*/
+
+/*
+ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	background-color: #00695c;
+	position: relative;
+}
+*/
+/* Hover dropdown in navigation bar*/
+
+ul li{
+	display: inline-block;
+	
+	
+	
+}
+
+ul li a{
+	/*color: #2a034f;*/
+	color:white;
+	text-decoration: none;
+	padding: 10px;
+	
+	display: block;
+}
+
+/* τετραγωνακι καθε κουμπιου χρωμα*/
+ul li:hover{
+	
+	
+	background-color: #2a034f;
+}
+
+
+ul li:hover ul{
+	
+	display: block;
+	
+}
+
+
+ul ul{
+	
+	display: none;
+	position: absolute;
+	min-width: 400px;
+	
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 20px;
+	background-color: #2a034f;
+	opacity:0.95;
+
+	
+}
+
+
+ul ul li{
+	
+	display: block;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	background-color: #2a034f;
+	
+	
+	
+}
+
+
+/* tetragwnaki gurw apo thn epilogh tou product*/
+ul ul li:hover{
+	
+	background-color: #736282;
+	
+	
+	
+}
+/*emfoleumena koutakia gia to collapsible*/
+ul ul li ul{
+	
+	display: block;
+	position: relative;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	background-color: #2a034f;
+	
+}
+
+ul ul li ul:hover{
+	/*background-color: #26a69a;*/
+	background-color: #2a034f;
+	
+	
+	
+}
+
+
+
+/*
+ul li i{
+	color: #fff;
+	float: right;
+	padding-left: 20px;
+}
+*/
+/*
+nav div{
+	display: none;
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	padding: 10px;
+	cursor: pointer;
+}
+*/
+/*-----------------------------------------------------------------------*/
+/* FORMS STYLE */
+
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 5%;
+    padding: 1px 1px;
+    margin: 1px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+    width: auto;
+    padding: 1px 1px;
+    background-color: red;
+	border-radius: 5px;
+}
+/* Extra style for the login signup buttons */
+.submitbtn {
+    width: auto;
+    padding: 1px 1px;
+    background-color: #00A832;
+	border-radius: 5px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+    float: right;
+    padding-top: 1px;
+}
+
+
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 8%;
+    }
+} 
+
+/*styling for modal boxes*/
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 400px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+.submitbtn{
+    width: auto;
+    padding: 10px 18px;
+    background-color: #00A832;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: absolute;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+input[type=submit]{
+    width: auto;
+    padding: 10px 18px;
+    background-color: #00A832;
+	border-radius: 10px;
+	color:white;
+	cursor: pointer; /* Pointer/hand icon */
+}
+
+
+
+
+
+@media (max-width: 480px){
+	/*
+	nav div{
+		display: block;
+	}
+
+	ul{
+		display: none;
+		position: static;
+	}
+
+	ul li{
+		display: block;
+	}
+
+	ul ul{
+		position: static;
+		background-color: #4db6ac;
+	}
+
+	ul ul li{
+		background-color: #4db6ac;
+		border-radius: 0;
+	}
+	
+	
+	
+	
+	*/
+}
